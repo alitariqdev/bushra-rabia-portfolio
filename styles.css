@@ -7,9 +7,13 @@
 .recommendation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
 .recommendation-card{background:var(--paper);border:1px solid var(--line);padding:clamp(1.7rem,3vw,3rem);display:flex;flex-direction:column;min-height:390px;transition:transform .3s,border-color .3s,box-shadow .3s}
 .recommendation-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:var(--shadow)}
-.recommendation-card .quote-mark{font:600 5rem/1 "Manrope",sans-serif;color:var(--accent);margin-bottom:1rem}
-.recommendation-card blockquote{font:500 clamp(1.25rem,2vw,1.75rem)/1.45 "Manrope",sans-serif;letter-spacing:-.025em;margin:0}
+.recommendation-card .quote-mark{font:600 5rem/1 "Manrope",sans-serif;color:var(--accent);margin-bottom:.5rem}
+.recommendation-card blockquote{font:400 clamp(1rem,1.25vw,1.12rem)/1.72 "DM Sans",sans-serif;margin:0;color:var(--muted)}
+.recommendation-card blockquote p{margin:0 0 1.15rem}
+.recommendation-card blockquote p:last-child{margin-bottom:0}
 .recommendation-card .attribution{margin:auto 0 0;padding-top:2rem;border-top:1px solid var(--line);font-size:.82rem;font-weight:600}
+.recommendation-card .attribution a{display:inline-block;border-bottom:1px solid transparent;transition:border-color .2s}
+.recommendation-card .attribution a:hover{border-color:var(--ink)}
 .recommendation-card .attribution span{display:block;color:var(--muted);font-weight:400}
 @media(max-width:900px){.site-header{grid-template-columns:1fr auto}nav{display:none}.hero{grid-template-columns:1fr;padding-top:4rem}.hero-aside{justify-self:start;width:100%;display:grid;grid-template-columns:180px 1fr;align-items:end}.orb{width:180px;margin:0 -35px 0 0}.role-card{padding:2rem 1.5rem}.vertical-label{display:none}.statement,.contact{grid-template-columns:1fr}.section-heading,.recommendations-heading{grid-template-columns:1fr;gap:1rem}.expertise-grid,.recommendation-grid{grid-template-columns:1fr}.expertise-card{min-height:auto}.recommendation-card{min-height:330px}.credentials-layout{grid-template-columns:1fr}.statement-stats{max-width:500px}.contact-actions{max-width:420px}}
 @media(max-width:580px){.site-header{height:72px}.hero{min-height:auto;padding-bottom:5rem;gap:3rem}.hero-aside{display:block}.orb{width:150px;margin:0 0 -35px auto}.role-card{padding-top:4.5rem}.role-card div{flex-direction:column;gap:.25rem}.statement{gap:3rem}.statement-stats span{font-size:1.35rem}.section-heading{margin-bottom:3rem}.timeline{margin:0}.timeline-item{grid-template-columns:82px 20px 1fr;gap:.5rem}.timeline-content ul{padding-left:.8rem}.certifications article{grid-template-columns:70px 1fr}.certifications small{display:none}.contact{gap:3rem}footer{grid-template-columns:1fr 1fr}.footer-brand{display:none}footer>a:last-child{justify-self:end}}
